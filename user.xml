@@ -1,0 +1,18 @@
+<templateSet group="user">
+  <template name="ust" value="const { t } = useTranslation();" description="useTranslation" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TS_STATEMENT" value="true" />
+      <option name="TWCSS" value="true" />
+    </context>
+  </template>
+  <template name="t" value="t(&quot;$FILE_NAME$.$END$&quot;)" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="FILE_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="TS_EXPRESSION" value="true" />
+      <option name="TWCSS" value="true" />
+    </context>
+  </template>
+</templateSet>
